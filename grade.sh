@@ -24,6 +24,7 @@ RESULT=`grep "failure" testResult.txt | wc -l`
 if [[ $RESULT -gt 0 ]]
 then
     echo "Test Fail"
+    echo `cat testResult.txt`
 else
     echo "Test Pass"
 fi
