@@ -1,0 +1,15 @@
+JUnit version 4.13.2
+.E
+Time: 0.011
+There was 1 failure:
+1) testMergeRightEnd(TestListExamples)
+java.lang.AssertionError: expected same:<[a, a, b, c, d]> was not:<[a, b, c, d]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotSame(Assert.java:829)
+	at org.junit.Assert.assertSame(Assert.java:772)
+	at org.junit.Assert.assertSame(Assert.java:783)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:19)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
