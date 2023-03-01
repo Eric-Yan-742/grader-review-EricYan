@@ -20,11 +20,10 @@ then
     exit 2
 fi
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples > testResult.txt
-RESULT=`grep "failure" testResult.txt | wc -l`
-if [[ $RESULT -gt 0 ]]
+RESULT=`grep "failure" testResult.txt`
+if [[ $RESULT == "" ]]
 then
-    echo "Test Fail"
-    echo `cat testResult.txt`
+    echo "Tests all Pass" # If tests all pass
 else
-    echo "Test Pass"
+    echo `grep "Failures:" testResult.txt` # If any of the tests fail
 fi
