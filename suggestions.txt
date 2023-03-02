@@ -1,0 +1,11 @@
+Testing the grader:
+this repo https://github.com/ucsd-cse15l-w23/list-examples-grader | ListExamples.java not found 😡
+"Cannot find ListExamples.java! Exit code: 1"
+
+this repo https://github.com/ucsd-cse15l-f22/list-methods-corrected | all pass 🙂
+
+Comments:
+I like how you included the errors that are put out into your feedback, we just said the count, but ig yours also works!
+I like how short your code is, as it makes it aesthetically pleasing (nice to look at) and also is probably taking up less space.
+
+Constructive feedback from Alessio: I like how you implemented it. Potentially you could removed "Exit code: 1" from output, since the error has already been stated. But overall, very good job! 
